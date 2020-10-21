@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/CSS/style.css">
+	<title>Document</title>
+</head>
+<header>
+	
+</header>
+<body>
+
+
+
+ <script type="text/javascript">
+            var afficher=false; //permet de savoir si l'image est affichée ou non
+             
+            function viewImage(id) {
+                var contenuImage=!afficher ? "<img src='/image/profanglaisfail.gif'>" : ""; //en fonction de afficher on met l'image ou non
+                afficher=!afficher;
+                var contenuBouton=afficher ? "Cacher l'image" : "Afficher l'image" ; //On met un texte correspondant
+                 
+                document.getElementById(id).innerHTML=contenuImage;
+                document.getElementById("bouton").innerHTML=contenuBouton;
+            }
+        </script>
+ 
+        <div id="bouton" onclick="javascript:viewImage('image');"> Afficher l'image  </div>
+        <div id="image"></div>
+
+
+
+
+
+
+	<div id="containerbird">
+				<p class="titrebienvenue">Kuro Sensei Hunt<br>Enjoy The Game</p>
+				<div class="bird-container bird-container--one">
+					<div class="bird bird--one"></div>
+				</div>
+
+				<div class="bird-container bird-container--two">
+					<div class="bird bird--two"></div>
+				</div>
+
+				<div class="bird-container bird-container--three">
+					<div class="bird bird--three"></div>
+				</div>
+
+				<div class="bird-container bird-container--four">
+					<div class="bird bird--four"></div>
+				</div>
+				<div class="bird-container bird-container--five">
+					<div class="bird bird--five"></div>
+				</div>
+				<div class="bird-container bird-container--six">
+					<div class="bird bird--six"></div>
+				</div>
+				<div class="bird-container bird-container--seven">
+					<div class="bird bird--seven"></div>
+				</div>
+				<div class="bird-container bird-container--eight">
+					<div class="bird bird--eight"></div>
+				</div>
+			</div>
+			<div class="image1"><img src="/image/profanglaisvenere.gif" alt=""></div>
+			<div class="image2"><img src="/image/profanglaisfail.gif" alt=""></div>
+    <div id="container">
+     
+      <img src="/image/kuro.gif" id="square" height="65" alt=""></div>
+	
+			<span id="score"> </span>
+			<span id="scorekuro"></span>
+			
+			
+			<button id='Start'>Start the Game!</button>
+			<button id='b1'>Pause</button>
+			<button id='b2'>Nouvelle Partie</button>
+			
+			
+			
+			
+			
+		
+			
+		
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</body>
+<footer>
+	
+</footer>
+<script src="JS/script.js"></script>
+</html>

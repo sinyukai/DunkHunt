@@ -1,0 +1,215 @@
+
+
+body{
+	background-color: bisque;
+}
+
+h1 {
+	font-family: "Arima Madurai", cursive;
+	color: black;
+	font-size: 4rem;
+	letter-spacing: -3px;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+}
+.titrebienvenue{
+	font-family: cursive;
+	color: black;
+	font-size: 4rem;
+	letter-spacing: -3px;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+.bird--one {
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+}
+.bird--two {
+	animation-duration: 0.9s;
+	animation-delay: -0.75s;
+}
+.bird--three {
+	animation-duration: 1.25s;
+	animation-delay: -0.25s;
+}
+.bird--four {
+	animation-duration: 1.1s;
+	animation-delay: -0.5s;
+}
+
+.bird--five {
+	animation-duration: 0.7s;
+	animation-delay: -0.4s;
+}
+.bird--six {
+	animation-duration: 1.20s;
+	animation-delay: -0.3s;
+}
+.bird--seven {
+	animation-duration: 1.40s;
+	animation-delay: -0.6s;
+}
+.bird--eight {
+	animation-duration: 1.50s;
+	animation-delay: -0.9s;
+}
+
+.bird-containerbird {
+	position: absolute;
+	top: 15%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.bird-containerbird--one {
+	animation-duration: 15s;
+	animation-delay: 0;
+}
+.bird-containerbird--two {
+	animation-duration: 16s;
+	animation-delay: 1s;
+}
+.bird-containerbird--three {
+	animation-duration: 14.6s;
+	animation-delay: 9.5s;
+}
+.bird-containerbird--four {
+	animation-duration: 16s;
+	animation-delay: 10.25s;
+}
+.bird-containerbird--five {
+	animation-duration: 13.8s;
+	animation-delay: 9.25s;
+}
+.bird-containerbird--six {
+	animation-duration: 14.8s;
+	animation-delay: 11.25s;
+}
+.bird-containerbird--seven {
+	animation-duration: 13.4s;
+	animation-delay: 8.25s;
+}
+.bird-containerbird--eight {
+	animation-duration: 14s;
+	animation-delay: 12.25s;
+}
+
+@keyframes fly-cycle {
+	100% {
+		background-position: -900px 0;
+	}
+}
+@keyframes fly-right-one {
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+}
+@keyframes fly-right-two {
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+	51% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+}
+
+#containerbird {
+	width: 1000px;
+	height: 600px;
+	border: 1px dotted black;
+	background-image: url(/image/unnamed.gif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 22%;
+}
+
+#square {
+	position: absolute;
+}
+
+.image1{
+	position: absolute;
+	margin-left: 0%;
+	margin-top: 10%;
+}
+
+
+.image2{
+	position: absolute;
+	margin-left: 75%;
+	margin-top: 10%;
+	animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+	from{transform : scale(1.8) rotate(0deg);
+	}
+	to{
+		transform: scale(0.4) rotate(360deg);
+	}
+}
+
+#scare{
+	
+}
+
+.score{
+	z-index: 99;
+}
+
